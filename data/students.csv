@@ -1,0 +1,11 @@
+student_id,name,faculty,attendance,average_mark,failed_modules,missed_assignments
+1001,Sipho Nkosi,Engineering,92,78,0,0
+1002,Lebo Mokoena,Science,58,45,3,4
+1003,Thabo Dlamini,Commerce,72,61,1,1
+1004,Ayanda Zulu,Education,85,70,0,0
+1005,Nomsa Khumalo,Engineering,65,48,2,3
+1006,Mpho Ndlovu,Science,90,82,0,0
+1007,Zanele Sithole,Commerce,55,42,4,5
+1008,Tshepo Maseko,Education,77,58,1,2
+1009,Lindiwe Mthembu,Engineering,69,50,2,1
+1010,Andile Mkhize,Science,95,88,0,0
