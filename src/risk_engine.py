@@ -1,4 +1,10 @@
-def calculate_risk(student):
+from typing import Dict, Any
+
+def calculate_risk(student: Dict[str, Any]) -> int:
+    """
+    Calculates risk score for a single student dictionary.
+    """
+    
     score = 0
     
     # attendance rule
@@ -25,3 +31,18 @@ def get_risk_level(score):
     
     else:
         return "LOW"
+    
+def process_studemt(student: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    The main handler that enriches a student record with risk data.
+    """
+    
+    risk_score = calculate_risk(student)
+    risk_level = get_risk_level(risk_score)
+    
+    #Return a new enriched dictionary (immutability is good)
+    return {
+        **student,
+        "risk_score": risk_score,
+        "risk_level": risk_level
+    }
